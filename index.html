@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Landing Page With Light/Dark Mode</title>
+  <link rel="stylesheet" href="particles.js-master/demo/css/style.css" />
+</head>
+
+<body>
+
+  <main>
+    <div class="big-wrapper light">
+      <header>
+        <div class="container">
+          <div class="logo">
+            <h3>/gsdaier</h3>
+          </div>
+
+          <div class="links">
+            <ul>
+              <li><a href="#texttec">Technologies</a></li>
+              <li><a href="#pdiv">About</a></li>
+              <li><a href="https://www.linkedin.com/in/gustavo-daier-708a64228/">LinkedIn</a></li>
+              <li><a href="https://github.com/gsdaier" class="btn">Github</a></li>
+            </ul>
+          </div>
+
+          <div class="overlay"></div>
+
+          <div class="hamburger-menu">
+            <div class="bar"></div>
+          </div>
+        </div>
+      </header>
+
+      <div class="showcase-area">
+        <div class="container">
+          <div class="left">
+            <div class="big-title">
+              <h1>welcome to my website, </h1>
+              <h1>get to know me better</h1>
+            </div>
+            <p class="text">
+              To contact me by email, click the button below
+            </p>
+            <div class="cta">
+              <a href="mailto:gustavodaier@outlook.com" class="btn">contact me</a>
+            </div>
+          </div>
+
+          <div class="right">
+            <img
+              src="https://media2.giphy.com/media/26tn33aiTi1jkl6H6/giphy.gif?cid=ecf05e47stizkfzn6q2jcyj6pr5cb7fguak5uzm1cn022vls&rid=giphy.gif&ct=g"
+              alt="Person Image" class="person" style="width: 600px" />
+          </div>
+        </div>
+      </div>
+
+      <div class="bottom-area">
+        <div class="container">
+          <button class="toggle-btn">
+            <i class="far fa-moon"></i>
+            <i class="far fa-sun"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div class="tec">
+    <div class="textdiv">
+      <a class="texttec">Technologies</a>
+    </div>
+  </div>
+
+  <!-- particles.js container -->
+  <div id="particles-js" style="height: 200px;"></div>
+
+  <!-- scripts -->
+  <script src="particles.js-master/particles.js"></script>
+  <script src="particles.js-master/demo/js/app.js"></script>
+
+  <script>
+    var count_particles, stats, update;
+    stats = new Stats;
+    stats.setMode(0);
+    stats.domElement.style.position = 'absolute';
+    stats.domElement.style.left = '0px';
+    stats.domElement.style.top = '0px';
+    document.body.appendChild(stats.domElement);
+  </script>
+
+  <!-- icons container -->
+  <div class="containercarousel">
+    <div class="carousel">
+      <img src="https://img.icons8.com/color/144/000000/javascript--v1.png" class="tecimage" alt="js icon">
+      <img src="https://img.icons8.com/color/144/000000/css3.png" class="tecimage" alt="css icon">
+      <img src="https://cdn-icons-png.flaticon.com/512/732/732212.png" class="tecimage" alt="hmtl icon">
+      <img src="https://img.icons8.com/nolan/128/react-native.png" class="tecimage" alt="react icon">
+      <img src="https://img.icons8.com/color/128/000000/nodejs.png" class="tecimage" alt="node icon">
+    </div>
+  </div>
+
+  <div class="aboutcontainer">
+    <div class="aboutdiv">
+      <a>About Me</a>
+    </div>
+    <div class="pdiv">
+      <p class="aboutp">
+       I'm Gustavo, I'm 19 years old and I'm studying to be a full stack web developer. I'm self-taught and at the moment I'm focused on studies.<br>
+       This website will be constantly updated with new projects that i do.
+      </p>
+    </div>
+  </div>
+
+
+
+  <!-- JavaScript Files -->
+
+  <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+  <script src="./script.js"></script>
+</body>
+
+</html>
