@@ -6,7 +6,7 @@ This is for a better comfort to the eyes of those who are accessing the site, be
 
 <h4> - It has a button that goes directly to my linkedin, another to my github and another to contact me by email </h4>
 This makes it easy for anyone who needs to know more about me or talk to me directly
-<img src="readme files/test.gif">
+<img src="readme files/normalgif.gif" style="width: 700px">
 <h4> - The site is fully mobile responsive, with a fully functional menu when accessing the site from a mobile device. </h4>
 With simple and functional animations, it makes user navigation better
 
