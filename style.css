@@ -72,8 +72,6 @@ canvas{
   background-repeat: no-repeat;
 }
 
-
-
 .stop-scrolling {
   height: 100%;
   overflow: hidden;
@@ -418,7 +416,7 @@ header .container {
 
 .tec{
   display: flex;
-  width: 100%;
+  width: 100vw;
   flex-direction: row;
   justify-content: center;
   background-color: transparent;
@@ -436,9 +434,10 @@ header .container {
   color: #fff;
 }
 .tecimage{
-  width: 150px;
+  width: 12%;
   float: left;
   padding: 20px;
+  max-width: 200px;
 }
 
 .containercarousel{
@@ -448,6 +447,13 @@ header .container {
   position: relative;
   margin-top: 10px;
 }
+
+@media only screen and (max-width: 950px) {
+  .tecimage{
+    width: 110px;
+  }
+}
+
 @media screen and (max-width: 470px) {
   .container {
     padding: 0 1.5rem;
@@ -490,4 +496,8 @@ header .container {
 .aboutp{
   color:#fff;
 
+}
+
+.linkgit{
+  color: red;
 }
