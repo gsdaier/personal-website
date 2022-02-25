@@ -70,7 +70,7 @@ canvas{
 }
 
 /* ---- particles.js container ---- */
-
+/* 
 #particles-js{
   width: 100%;
   height: 100%;
@@ -79,7 +79,7 @@ canvas{
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
-}
+} */
 
 .stop-scrolling {
   height: 100%;
@@ -426,28 +426,26 @@ header .container {
 
 .tec{
   display: flex;
-  width: 100vw;
+  width: 100%;
   flex-direction: row;
   justify-content: center;
-  background-color: transparent;
-  padding-bottom: 70px;
-  position: absolute;
-  margin-top: 65px;
+  background-color: #000000;
+  padding: 40px;
+  margin-top: 50px;
 } 
-
-.textdiv{
-  margin-top: 15px;
-}
 
 .texttec{
   font-size: 2em;
   color: #fff;
+  display: flex;
+  justify-content: center;
 }
 .tecimage{
   width: 12%;
   float: left;
   padding: 20px;
   max-width: 200px;
+  margin-top: 50px;
 }
 
 .containercarousel{
@@ -455,14 +453,12 @@ header .container {
   flex-direction: row;
   justify-content: center;
   position: relative;
-  margin-top: 10px;
 }
 
 
 /* --- about me content --- */
 
 .aboutcontainer{
-  padding-top: 50px;
   line-height: 1.4;
   display: inline-block;
   position: relative;
@@ -474,13 +470,15 @@ header .container {
   color: #fff;
   justify-content: center;
   display: flex;
-  padding: 20px;
+  padding: 40px;
+  background-color: black;
 }
 
 .aboutimg{
   width: 100%;
   display: flex;
   justify-content: center;
+  margin-top: 30px;
 }
 
 .aboutimg img{
@@ -498,6 +496,7 @@ header .container {
 .aboutp{
   color:#fff;
   width: 700px;
+  margin-bottom: 100px;
 }
 
 .linkgit{
@@ -515,12 +514,17 @@ header .container {
   position: relative;
 }
 
+.projectstitle{
+  background-color: #000000;
+  padding: 40px;
+}
 .projectstitle a{
   color: #fff;
   font-size: 2em;
   line-height: 1.4;
   justify-content: center;
   display: flex;
+
 }
 
 .projectstitle p{
