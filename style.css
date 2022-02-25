@@ -28,21 +28,6 @@
   box-sizing: border-box;
 }
 
-html,body,span,object,iframe,h2,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}
-body{line-height:1}
-article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
-nav ul{list-style:none}
-blockquote,q{quotes:none}
-blockquote:before,blockquote:after,q:before,q:after{content:none}
-a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent;text-decoration:none}
-mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}
-del{text-decoration:line-through}
-abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}
-table{border-collapse:collapse;border-spacing:0}
-hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
-input,select{vertical-align:middle}
-li{list-style:none}
-
 /* ---- base ---- */
 
 html,body{ 
@@ -58,6 +43,30 @@ html{
 
 canvas{
   display:block;
+}
+
+/* --- go to top btn --- */
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 12px;
+  border-radius: 10px;
+}
+
+#myBtn img{
+  width: 40px;
+}
+#myBtn:hover {
+  background-color: #555;
 }
 
 /* ---- particles.js container ---- */
@@ -251,9 +260,8 @@ header .container {
   box-shadow: 0 0 40px 2px rgba(0, 0, 0, 0.05);
 }
 
-.person {
-  width: 123%;
-  transform: translate(15%, 25px);
+.codegif {
+  width: 100%;
 }
 
 .toggle-btn {
@@ -414,6 +422,8 @@ header .container {
   }
 }
 
+/* --- tec div --- */
+
 .tec{
   display: flex;
   width: 100vw;
@@ -448,6 +458,110 @@ header .container {
   margin-top: 10px;
 }
 
+
+/* --- about me content --- */
+
+.aboutcontainer{
+  padding-top: 50px;
+  line-height: 1.4;
+  display: inline-block;
+  position: relative;
+  width: 100%;
+}
+
+.aboutdiv{
+  font-size: 2em;
+  color: #fff;
+  justify-content: center;
+  display: flex;
+  padding: 20px;
+}
+
+.aboutimg{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.aboutimg img{
+  width: 150px;
+  border-radius: 50%;
+
+}
+
+.pdiv{
+  line-height: 1.4;
+  justify-content: center;
+  display: flex;
+  padding: 40px;
+}
+.aboutp{
+  color:#fff;
+  width: 700px;
+}
+
+.linkgit{
+  color: red;
+}
+
+/* --- projects content --- */
+
+.projectscontainer{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 30px;
+  display: inline-block;
+  position: relative;
+}
+
+.projectstitle a{
+  color: #fff;
+  font-size: 2em;
+  line-height: 1.4;
+  justify-content: center;
+  display: flex;
+}
+
+.projectstitle p{
+  color: #fff;
+  font-size: 1em;
+  line-height: 1.4;
+  justify-content: center;
+  display: flex;
+}
+
+.projectsdiv{
+  justify-content: center;
+  display: flex;
+  margin-top: 30px;
+}
+
+.project1{
+  border: solid 4px #ccc;
+  background-color: rgb(43, 43, 43);
+  border-radius: 20px;
+  padding: 10px;
+  margin: 20px;
+}
+
+.pimg{
+  width: 330px;
+}
+.ptext{
+  width: 330px;
+  color: #ccc;
+  text-transform: capitalize;
+}
+.ptext p{
+  display: flex;
+  justify-content: center;
+  font-size: 1.1 rem;
+  padding-bottom: 7px;
+}
+
+/* --- responsive rules --- */
+
 @media only screen and (max-width: 950px) {
   .tecimage{
     width: 110px;
@@ -470,34 +584,4 @@ header .container {
   .showcase-area .btn {
     font-size: 0.8rem;
   }
-}
-
-.aboutcontainer{
-  padding-top: 50px;
-  line-height: 1.4;
-  display: inline-block;
-  position: relative;
-  width: 100%;
-}
-
-.aboutdiv{
-  font-size: 2em;
-  color: #fff;
-  justify-content: center;
-  display: flex;
-}
-
-.pdiv{
-  line-height: 1.4;
-  justify-content: center;
-  display: flex;
-  padding: 40px;
-}
-.aboutp{
-  color:#fff;
-
-}
-
-.linkgit{
-  color: red;
 }
