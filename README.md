@@ -18,4 +18,7 @@
 - [X] Technologies
 - [X] About Me
 - [X] Responsive for Mobile
-- [ ] Gifs and informations about my projects
+- [X] Gifs and informations about my projects
+- [X] Go to Top button <br>
+Updating...
+
