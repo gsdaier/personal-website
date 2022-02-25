@@ -10,8 +10,12 @@
 </head>
 
 <body>
+  
+  <!-- go to top btn -->
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="https://img.icons8.com/material-rounded/48/000000/double-up.png"/></button>
 
   <main>
+    <!-- navbar content -->
     <div class="big-wrapper light">
       <header>
         <div class="container">
@@ -21,10 +25,11 @@
 
           <div class="links">
             <ul>
+              <li><a href="#projects">Projects</a></li>
               <li><a href="#tecno">Technologies</a></li>
               <li><a href="#aboutlink">About</a></li>
-              <li><a href="https://www.linkedin.com/in/gustavo-daier-708a64228/">LinkedIn</a></li>
-              <li><a href="https://github.com/gsdaier" class="btn">Github</a></li>
+              <li><a href="https://github.com/gsdaier">Github</a></li>
+              <li><a href="https://www.linkedin.com/in/gustavo-daier-708a64228/" class="btn">LinkedIn</a></li>
             </ul>
           </div>
 
@@ -36,6 +41,7 @@
         </div>
       </header>
 
+      <!-- landing page content -->
       <div class="showcase-area">
         <div class="container">
           <div class="left">
@@ -54,11 +60,12 @@
           <div class="right">
             <img
               src="https://media2.giphy.com/media/26tn33aiTi1jkl6H6/giphy.gif?cid=ecf05e47stizkfzn6q2jcyj6pr5cb7fguak5uzm1cn022vls&rid=giphy.gif&ct=g"
-              alt="Person Image" class="person"/>
+              alt="Person Image" class="codegif" />
           </div>
         </div>
       </div>
 
+      <!-- theme button -->
       <div class="bottom-area">
         <div class="container">
           <button class="toggle-btn">
@@ -69,6 +76,88 @@
       </div>
     </div>
   </main>
+
+
+
+
+
+  <script>
+    var count_particles, stats, update;
+    stats = new Stats;
+    stats.setMode(0);
+    stats.domElement.style.position = 'absolute';
+    stats.domElement.style.left = '0px';
+    stats.domElement.style.top = '0px';
+    document.body.appendChild(stats.domElement);
+  </script>
+
+  <!-- About me container -->
+  <div class="aboutcontainer" id="aboutlink">
+    <div class="aboutdiv">
+      <a>About Me</a>
+    </div>
+    <div class="aboutimg">
+      <img src="https://avatars.githubusercontent.com/u/96262128?v=4" alt="its me image">
+    </div>
+    <div class="pdiv">
+      <p class="aboutp" >
+        I'm 19 years old and I'm a Dev Web Front-end
+        I'm working with Javascript, HTML, CSS, node.js, react.js, SCSS<br>
+        Studying Software Engineering<br><br>
+
+        I have knowledge in:<br>
+        Git, Angular, Typescript, Frameworks, API's and Preprocessors 
+        Program logic, algorithm<br><br>
+
+        To see my projects and learn more about what I already work on, visit my Github: https://github.com/gsdaier<br>
+        This website will be constantly updated.
+        For details <a href="https://github.com/gsdaier" class="linkgit">acess my Github</a>
+      </p>
+    </div>
+  </div>
+
+  <!-- projects content -->
+  <div class="projectscontainer" id="projects">
+    <div  class="projectstitle">
+      <a>My projects</a>
+      <p>
+        A brief demo of some of my projects (Click inside images for go to repository)</p>
+    </div>
+    
+    <div class="projectsdiv">
+      <div class="project1">
+        <div class="pimg">
+          <a href="https://github.com/gsdaier/Monogram-copy"><img src="https://github.com/gsdaier/Monogram-copy/raw/main/gifs/copywebsite1.gif"></a> 
+        </div>
+        <div class="ptext">
+          <p>monogram copy</p>
+          <a>copy of the monogram site, using the same functionality, colors and palettes 
+            made to demonstrate programming skills</a>
+        </div>
+      </div>
+
+      <div class="project1">
+        <div class="pimg">
+          <a href="https://github.com/gsdaier/personal-website"><img src="./readme files/normalgif.gif"></a> 
+        </div>
+        <div class="ptext">
+          <p>My Personal website</p>
+          <a> this is the site you are accessing now, it was created with the intention of demonstrating my work and introducing myself</a>
+        </div>
+      </div>
+
+      <div class="project1">
+        <div class="pimg">
+          <a href="https://github.com/gsdaier"><img src="https://media3.giphy.com/media/yAGIvCiwPJn5C/giphy.gif?cid=ecf05e47ax1vie7df4drvfn87rjoq47p02bhz3qvzg4m2wrb&rid=giphy.gif&ct=g"></a> 
+        </div>
+        <div class="ptext">
+          <p>coding</p>
+          <a> I'm still coding this project</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
 
   <div class="tec">
     <div class="textdiv">
@@ -83,16 +172,6 @@
   <script src="js folder/particles.js"></script>
   <script src="js folder/app.js"></script>
 
-  <script>
-    var count_particles, stats, update;
-    stats = new Stats;
-    stats.setMode(0);
-    stats.domElement.style.position = 'absolute';
-    stats.domElement.style.left = '0px';
-    stats.domElement.style.top = '0px';
-    document.body.appendChild(stats.domElement);
-  </script>
-
   <!-- icons container -->
   <div class="containercarousel">
     <div class="carousel" id="img">
@@ -104,27 +183,13 @@
       <img src="https://img.icons8.com/color/144/000000/nodejs.png" class="tecimage" alt="node icon">
       <img src="https://img.icons8.com/color/144/000000/angularjs.png" class="tecimage" alt="angular icon">
       <img src="https://img.icons8.com/color/144/000000/git.png" class="tecimage" alt="git icon">
-      <img src="https://img.icons8.com/color/144/000000/wordpress.png" class="tecimage" alt="wordpress icon">
     </div>
   </div>
 
-  <div class="aboutcontainer">
-    <div class="aboutdiv">
-      <a>About Me</a>
-    </div>
-    <div class="pdiv">
-      <p class="aboutp" id="aboutlink">
-       My name is Gustavo, I'm 19 years old, I'm full stack web developer.<br>
-       This website will be constantly updated with new projects that i do.
-       For details acess my <a href="https://github.com/gsdaier" class="linkgit">acess my Github</a>
-      </p>
-    </div>
-  </div>
 
 
 
   <!-- JavaScript Files -->
-
   <script src="https://kit.fontawesome.com/a81368914c.js"></script>
   <script src="js folder/script.js"></script>
 </body>
