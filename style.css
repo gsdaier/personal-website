@@ -570,6 +570,9 @@ header .container {
   .tecimage{
     width: 110px;
   }
+  .projectsdiv{
+    display: block;
+  }
 }
 
 @media screen and (max-width: 470px) {
