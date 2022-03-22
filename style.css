@@ -455,7 +455,6 @@ header .container {
   position: relative;
 }
 
-
 /* --- about me content --- */
 
 .aboutcontainer{
@@ -550,18 +549,20 @@ header .container {
 }
 
 .pimg{
-  width: 330px;
+  width: 100%;
 }
 .ptext{
   width: 330px;
   color: #ccc;
   text-transform: capitalize;
+  width: 100%;
 }
 .ptext p{
   display: flex;
   justify-content: center;
   font-size: 1.1 rem;
   padding-bottom: 7px;
+  width: 100%;
 }
 
 /* --- responsive rules --- */
@@ -570,6 +571,7 @@ header .container {
   .tecimage{
     width: 110px;
   }
+
   .projectsdiv{
     display: block;
   }
